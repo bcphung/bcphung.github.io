@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>It's @bcphung!</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <style>
+        * { padding: 0; margin: 0; }
+        body {
+            background: #1abc9c;
+            font-family: 'Roboto', sans-serif;
+            text-transform: lowercase;
+            letter-spacing: 1px;
+        }
+
+        header {
+            text-align: justify;
+            height: 8em;
+            padding: 2em 5%;
+            background: #2c3e50;
+            color: #fff;
+        }
+
+        header::after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+        }
+
+        header > div,
+        header > div::before,
+        header > div h1 {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        header > div {
+            height: 100%;
+        }
+
+        header > div::before {
+            content: '';
+            height: 100%;
+        }
+
+        header > div h1 {
+            font-size: 3em;
+        }
+
+        @media screen and (max-width: 720px) {
+            header {
+                height: auto;
+            }
+            
+            header > div,
+            header > div h1 {
+                height: auto;
+                width: auto;
+                display: block;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>@bcphung</h1>
+        </div>
+    </header>
+</body>
+</html>
